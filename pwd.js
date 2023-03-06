@@ -7,7 +7,7 @@ process.stdout.write('prompt > ');
 
 // The stdin 'data' event fires after a user types in a line
 process.stdin.on('data', (data) => {
-    const { cwd } = require('node:process');
+    const { cwd } = require('node:process'); //check current dir bash 
 
     console.log(`Current directory: ${cwd()}`);
 
